@@ -1,0 +1,19 @@
+{
+  "name": "agent-camera-alerts-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "production": "pm2 start index.js --name agent-camera-alerts-bot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "telegraf": "^4.15.3"
+  }
+}
