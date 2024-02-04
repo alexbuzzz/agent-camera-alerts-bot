@@ -12,8 +12,8 @@ const token = process.env.AGENT_TOKEN
 const bot = new Telegraf(process.env.TELEGRAM_API_KEY)
 const chatId = process.env.TELEGRAM_ID
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json({ limit: '50mb' }))
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }))
 
 // Middleware to check for Authorization header
 app.use((req, res, next) => {
